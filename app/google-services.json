@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "451009645675",
+    "project_id": "pizzabro-5dad0",
+    "storage_bucket": "pizzabro-5dad0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451009645675:android:7e7a1f18f738295a79752e",
+        "android_client_info": {
+          "package_name": "com.soni5.pizzabro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "451009645675-8t9j3jii6bltjdgrvkeacukplno1mgb7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc9NlKmJ8R6ixlIs7XYbk4MzLnaUVbJkc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "451009645675-8t9j3jii6bltjdgrvkeacukplno1mgb7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
