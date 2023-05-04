@@ -3,60 +3,59 @@
 
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraintpizza"
-    android:layout_width="match_parent"
+    android:id="@+id/oconstraintpizza"
+    android:layout_width="350dp"
     android:layout_height="150dp">
 
 
     <TextView
-        android:id="@+id/pizzanumber"
-        android:layout_width="238dp"
-        android:layout_height="23dp"
-        android:layout_marginTop="12dp"
+        android:id="@+id/opizzaname"
+        android:layout_width="123dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/alice"
-        android:text="TextView"
+        android:text="Pizza Name"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.635"
+        app:layout_constraintHorizontal_bias="0.968"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PizzaName" />
+        app:layout_constraintTop_toBottomOf="@+id/oprice" />
 
     <TextView
-        android:id="@+id/PizzaName"
+        android:id="@+id/oprice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="168dp"
+        android:layout_marginTop="36dp"
         android:fontFamily="@font/alice"
-        android:text="TextView"
+        android:text="Old Price"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.215"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/price"
+        android:id="@+id/nprice"
         android:layout_width="68dp"
         android:layout_height="22dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/alice"
-        android:text="TextView"
+        android:text="New Price"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintHorizontal_bias="0.943"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.129" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="60dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="67dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pizza" />
+        app:srcCompat="@drawable/coupon" />
 </androidx.constraintlayout.widget.ConstraintLayout>

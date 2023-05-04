@@ -28,7 +28,7 @@ public class SignupActivity extends AppCompatActivity {
 
     EditText e1,e2,e3,e4;
     Button btn;
-    TextView textView;
+    TextView textViews;
     FirebaseFirestore firestore;
 
 
@@ -45,12 +45,21 @@ public class SignupActivity extends AppCompatActivity {
 
         btn = findViewById(R.id.ssignup);
 
-        textView = findViewById(R.id.slogin);
+        textViews = findViewById(R.id.slogin);
 
         firestore =  FirebaseFirestore.getInstance();
 
 
         HashMap<String,String> r = new HashMap<>();
+
+        textViews.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(SignupActivity.this, LoginActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
 
         btn.setOnClickListener(new View.OnClickListener()
         {

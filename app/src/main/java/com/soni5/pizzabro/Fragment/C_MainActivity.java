@@ -9,6 +9,7 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import com.soni5.pizzabro.Manager.AddProductFragment;
+import com.soni5.pizzabro.Manager.OfferManagerFragment;
 import com.soni5.pizzabro.R;
 import com.soni5.pizzabro.databinding.ActivityCmainBinding;
 import com.soni5.pizzabro.databinding.ActivityMainBinding;

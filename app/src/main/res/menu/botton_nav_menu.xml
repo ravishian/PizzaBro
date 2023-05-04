@@ -6,5 +6,8 @@
     <item android:title="Profile"
         android:id="@+id/profileb"/>
 
+    <item android:title="Orders"
+        android:id="@+id/Orders"/>
+
 
 </menu>

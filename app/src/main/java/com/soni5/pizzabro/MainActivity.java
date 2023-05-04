@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 
@@ -25,6 +26,10 @@ public class MainActivity extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance();
 
+
+//        btn = findViewById(R.id.timepass);
+
+
         if (firebaseAuth.getCurrentUser() != null)
         {
             Intent i = new Intent(MainActivity.this, C_MainActivity.class);
@@ -32,18 +37,33 @@ public class MainActivity extends AppCompatActivity {
             finish();
         }
 
-        btn = findViewById(R.id.timepass);
+        else
+        {
+            Intent i = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(i);
+            finish();
+        }
 
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v)
-            {
-                Intent i = new Intent(MainActivity.this, SignupActivity.class);
-                startActivity(i);
-                finish();
+//        new Handler().postDelayed(new Runnable() {
+//            @Override
+//            public void run()
+//            {
+//
+//
+//
+//            }
+//        },2000);
 
-            }
-        });
+//        btn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v)
+//            {
+//                Intent i = new Intent(MainActivity.this, SignupActivity.class);
+//                startActivity(i);
+//                finish();
+//
+//            }
+//        });
 
 
     }
